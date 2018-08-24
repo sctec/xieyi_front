@@ -1,0 +1,429 @@
+input, select, textarea {
+    margin: 0;
+    padding: 0;
+}
+input {
+    padding: 3px;
+}
+input[type='text'], 
+input[type='password'], 
+select,
+textarea {
+    display: inline-block;
+    padding: 8px 12px;
+    width: 300px;
+    height: 24px;
+    border: 1px solid rgba(0,200,200,0.25);
+    border-radius: 3px;
+    background: rgba(0,200,255,0.1);
+    color: #e5e5e5;
+    box-sizing: content-box;
+}
+select option{
+    background: rgba(0,0,0,0.75);
+    color: #f5f5f5;
+    padding: 8px 4px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+td, th {
+    border: 0;
+}
+/*main title con page*/
+.core_main {
+    padding-bottom: 48px;
+    width: 100%;
+    min-height: 400px;
+    border: 1px solid rgba(111,252,217,0.15);
+    background: rgba(0,0,0,0.75);
+}
+.core_title {
+    border-bottom: 1px solid rgba(111,252,217,0.15);
+    color: #ccc;
+    padding: 12px 16px;
+    background: rgba(0,0,0,.75);
+}
+.core_con {
+    overflow: auto;
+}
+.core_page {
+    padding: 15px;
+    text-align: right;
+    color: #ccc;
+    font-size: 14px;
+    width: auto;
+}
+.core_page a {
+    color: green;
+}
+.core_title_edit a {
+    color: green;
+}
+
+/* tablebg #table1 #table2 #table3 #table4*/
+.tablebg {
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    color: #ccc;
+}
+.tablebg a {
+    color: green;
+}
+.tablebg .tbkey,
+.tablebg .datalist .tbkey {
+    padding-right: 40px;
+    width: 25%;
+    height: 60px;
+    color: #ccc;
+    text-align: right;
+}
+.tablebg .tbval,
+.tablebg .datalist .tbval{
+    height: 60px;
+    text-align: left;
+    color: #ccc;
+}
+.tablebg .datafield,
+.tablebg .datalist {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.tablebg .datafield td, .tablebg .datafield th {
+    font-size: 14px;
+    font-weight: 400;
+    background: rgba(255,255,255,0.1);
+    padding: 6px 0;
+    margin: 0;
+    border: 0;
+}
+.tablebg .datalist td {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 4px;
+    margin: 0;
+    height: 30px;
+}
+.backbtn {
+    clear: both;
+    height: 26px;
+    text-align: center;
+    margin-top: 5px;
+}
+.button_text,
+.input_button,
+.Saleshop#buy_shop .core_con input[type="submit"] {
+    width: 150px;
+    height: 40px;
+    color: #f5f5f5;
+    text-align: center;
+    border-radius: 3px;
+    background: rgba(0,200,200,0.5);
+    cursor: pointer;
+}
+.msg {
+    color: red;
+    padding-left: 3px;
+}
+#bank, #country_id, #province_id, #city_id, #county_id {
+    width: 100px;
+}
+#state_shop, #state_net_11, #state_net_4, #state_net_5, #state_net_5_Region, #state_country, #state_province, #state_city, #state_county {
+    color: red;
+}
+.address input {
+    width: 200px;
+}
+/*所有page中form#form的元素样式*/
+form#form select, form#form input, form#form textarea {
+    margin-bottom: 0;
+}
+form#form select {
+    margin-left: 0;
+}
+
+/*Public/success*/
+.Public#success .core_con {
+    background: none;
+    border: 0;
+}
+/*.PrizeSplit#index*/
+.PrizeSplit#index .pageWidth {
+    background-image: none;
+    margin: 0px auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: auto;
+    width: 100%;
+}
+.PrizeSplit#index #box_root {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+.PrizeSplit#index .cont {
+    overflow: auto;
+}
+.PrizeSplit#index .mbx {
+    width: 100%;
+    height: 48px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.PrizeSplit#index .mbx p {
+    line-height: 47px;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+.PrizeSplit#index .mbx span {
+    color: #fff;
+    padding: 0px 6px;
+    background: #18a32a;
+    border-radius: 2px;
+    -o-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    margin: 0 10px;
+}
+.PrizeSplit#index .mbx a {
+    color: #18a32a;
+    text-decoration: underline;
+}
+.PrizeSplit#index .cont_detail {
+    width: 100%;
+    margin: 0 auto;
+}
+.PrizeSplit#index .detail_first, .detail_second {
+    width: 100%;
+    overflow: auto;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+.PrizeSplit#index .detail_first ul, .detail_second ul {
+    margin: 0 auto;
+    text-align: center;
+}
+.PrizeSplit#index .detail_first ul {
+    width: 760px;
+    margin: 0 auto;
+}
+.PrizeSplit#index .detail_second ul {
+    width: 800px;
+    margin: 0 auto;
+}
+.PrizeSplit#index .detail_first ul li, .PrizeSplit#index .detail_second ul li {
+    width: 90px;
+    background: #fff;
+    float: left;
+    box-shadow: 0 0 2px #8c8c8c;
+    display: inline;
+}
+.PrizeSplit#index .detail_first ul li {
+    margin: 0 4px;
+}
+.PrizeSplit#index .detail_second ul li {
+    margin: 0 4px;
+}
+.PrizeSplit#index .detail_first ul li h4, .detail_second ul li h4 {
+    font-size: 14px;
+    color: #fff;
+    width: 88px;
+    height: 26px;
+    line-height: 28px;
+    text-align: center;
+}
+.PrizeSplit#index .detail_first ul li h4 {
+    background: #1bbb30;
+    border: 1px solid #148b24;
+}
+.PrizeSplit#index .detail_second ul li h4 {
+    background: #e0232a;
+    border: 1px solid #b41d22;
+}
+.PrizeSplit#index .detail_first ul li table, .PrizeSplit#index .detail_second ul li table {
+    width: 90px;
+    border-left: 1px solid #a8a8a8;
+    border-right: 1px solid #a8a8a8;
+    border-bottom: 1px solid #a8a8a8;
+}
+.PrizeSplit#index .detail_first ul li table td, .PrizeSplit#index .detail_second ul li table td {
+    width: 100%;
+    font-size: 12px;
+    color: #545454px;
+    text-align: center;
+    line-height: 28px;
+}
+/*Tle#prizeForm*/
+.Tle#prizeForm .core_con {
+}
+#prizeForm .tablebg .datafield .source {
+    width: 200px;
+}
+.Tle#prizeForm .tablebg .datafield .number {
+    width: 100px;
+}
+.Tle#prizeForm .tablebg .datafield .calcul {
+    width: 300px;
+}
+.Tle#prizeForm .tablebg .datafield .layers {
+    width: 80px;
+}
+.Tle#prizeForm .tablebg .datafield .tights {
+    width: 80px;
+}
+/*Fun_bank#rem*/
+.FunBank#rem .core_con .add {
+    padding: 10px;
+    text-align: left;
+    background-position: 90% 25%;
+    font-size: 14px;
+    font-weight: bold;
+    color: green;
+}
+.FunBank#rem .core_con .add a {
+    color: green;
+}
+.FunBank#add_rem .core_con {
+    margin-top: 48px;
+}
+.FunBank#add_rem .core_con .button_text[type="button"]:last-child {
+    margin-left: 1%;
+}
+.FunBank#get #register .datalist {
+    border: none;
+}
+/*Mail#send*/
+.Mail#view .tablebg tr:first-child td,
+.Mail#answer .tablebg tr:first-child td {
+    padding: 12px 16px;
+    color: #ccc;
+}
+.Mail#view .tablebg table td:first-child,
+.Mail#answer .tablebg table td:first-child {
+    padding-right: 40px;
+    width: 25% !important;
+    height: 60px;
+    color: #ccc;
+    text-align: right;
+}
+.Mail#answer #answerContent {
+    width: 80% !important;
+}
+.Mail#view .tablebg table input,
+.Mail#answer .tablebg table input {
+    margin-left: 10px;
+    float: left;
+    color: #ccc;
+}
+.Mail#view .tablebg table input:first-child,
+.Mail#answer .tablebg table input:first-child {
+    margin-left: 25%;
+}
+/*公告*/
+.User#showNotice .tablebg th {
+    font-size: 18px;
+    padding: 20px;
+}
+.User#viewNotice .core_con {
+    margin: 0;
+}
+.User#showNotice .tablebg td {
+    padding: 20px;
+}
+
+/*Sale/usereg*/
+.Sale#usereg #table3, .Sale#usereg #table3 td {
+    background: none;
+    border: 0;
+}
+.Sale#product.core_main {
+    background: none;
+}
+.Sale#product tr {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.Sale#product thead td {
+    font-size: 14px;
+    font-weight: 400;
+    background: rgba(255,255,255,0.1);
+    text-align: center;
+    padding: 6px 0;
+    margin: 0;
+    border: 0;
+}
+.Sale#product .productSelect {
+    background: none;
+    padding: 0 10px !important;
+    height: 20px;
+    line-height: 20px;
+    color: #f5f5f5;
+    text-align: center;
+    border-radius: 3px;
+    border: none !important;
+    background: rgba(0,200,200,0.5);
+    cursor: pointer;
+}
+.Sale#product tbody td {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 6px 0;
+    margin: 0;
+    border: 0;
+}
+.Sale#product tbody td img {
+    border: none;
+    width: 100px;
+    height: 100px;
+}
+#selectedProductI tr {
+    border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+}
+.Sale#up #table2 tr:first-child td {
+    color: #ccc;
+    padding: 12px 16px;
+}
+.Saleshop#buy_shop .core_con {
+    padding: 48px;
+}
+.Saleshop#buy_shop .core_con a {
+    color: green
+}
+.Saleshop#buy_shop .core_con input,
+.Saleshop#buy_shop .core_con select {
+    margin: 0 10px;
+    width: 100px;
+}
+.User .core_con,
+.Mail .core_con,
+.FunBank#give .core_con {
+    margin-top: 48px;
+}
+.User .button_text,
+.Mail .button_text,
+.Mail .input_button,
+.FunBank .button_text,
+.Sale .button_text {
+    margin-top: 10px;
+    margin-left: 25%;
+}
+.User .backbtn .button_text {
+    margin: 0 !important;
+}
+
+.ztree li a {
+    color: #ccc !important;
+}
+

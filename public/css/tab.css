@@ -1,0 +1,125 @@
+/*
+* @Author: win
+* @Date:   2016-09-09 12:12:43
+* @Last Modified by:   win
+* @Last Modified time: 2016-09-09 15:56:51
+*/
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.head{
+	width: 100%;
+	height: 120px;
+	background-color: #1F1F1F;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	color: hsla(0,0%,89%,1.00);
+}
+.main-title{
+	height: 60px;
+	background: #1b6d85;
+}
+.main-title>span{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bolder;
+    color:#ffffff;
+    border-bottom: 1px #ffffff solid;
+}
+
+.nave{
+	width:60px;
+	background: #eee;
+	position: fixed;
+	left: 0;
+	top: 120px;
+}
+.nave ul{width: 100%;height: 100%;}
+.nave ul li{
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+	transition: all 1s;
+}
+.nave ul li:nth-child(even){
+	background: #fff;
+}
+.nave ul li:nth-child(1).current{
+	background: #1b6d85;
+}
+.nave ul li:nth-child(2).current{
+	background: #1b6d85;
+}
+.current{
+    color: #ffffff;
+}
+.main_box{
+	width: 100%;
+	height: 100%;
+	background: pink;
+	padding: 120px 0 0 60px;
+	box-sizing: border-box;
+}
+.main_box>div{
+	width: 100%;
+}
+.page1{
+	background: #f43737;
+}
+.page2{
+	background: #f4f4f4;
+    overflow: hidden;
+}
+.page2-form{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.form-controla,.form-controlc{
+    width: 600px;
+    font-weight: 300;
+    border-radius: 0;
+    padding: 12px 20px;
+    border: 2px #1b6d85 solid;
+}
+.form-controla:focus,.form-controlb:focus,.form-controlc:focus {
+    border-color: white;
+    box-shadow: none;
+}
+
+.form-controlb{
+    width: 600px;
+    font-weight: 300;
+    border-radius: 0;
+    padding: 12px 20px;
+    border: 2px #1b6d85 solid;
+    margin-top: 20px;
+}
+
+.formbutton{
+    margin-top:20px;
+    font-size: 15px;
+    padding: 20px 50px 20px 50px;
+    border-radius: 6px;
+    background: #1b6d85;
+    color: #ffffff;
+}
+
+.page3{
+	background: #e4af05;
+}
+.piaoliu{
+    overflow: hidden;
+}
+
+
+.fotter{
+	width: 100%;
+	height: 1px;
+	background: pink;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Contact</title>
+
+  <!-- load CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">        <!-- Google web font "Open Sans" -->
+  <link rel="stylesheet" href="css/bootstrap.minone.css">                                          <!-- https://getbootstrap.com/ -->
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">                                      <!-- Font awesome -->
+    <link rel="stylesheet" href="css/pillar.css">
+    <link rel="stylesheet" href="css/tooplate-style-3.css">
+  <!--<link rel="stylesheet" href="css/pillar.css">-->
+
+  <script>
+    var renderPage = true;
+
+    if (navigator.userAgent.indexOf('MSIE') !== -1
+      || navigator.appVersion.indexOf('Trident/') > 0) {
+      /* Microsoft Internet Explorer detected in. */
+      alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
+      renderPage = false;
+    }
+  </script>
+
+</head>
+
+<body style="background: url('./img/diqiu2.jpg') fixed">
+
+  <!-- Loader -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
+  <div class="tm-main">
+      <div class="mainNav">
+          <div class="content">
+              <div class="logo">
+                  <!--<img src="images/logo.png" alt="">-->
+              </div>
+              <ul class="mainNavList">
+                  <li class="dropdown">
+                      <a href="index.html">首页</a>
+                  </li>
+                  <li class="dropdown">
+                      <a href="contact.html">协议</a>
+                      <ul>
+                          <li>
+                              <a href="#">抖协议</a>
+                          </li>
+                          <li>
+                              <a href="contact.html">发协议</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="dropdown">
+                      <a href="floater.html">漂流瓶</a>
+                      <ul>
+                          <li>
+                              <a href="floater.html">捞瓶子</a>
+                          </li>
+                          <li>
+                              <a href="floater.html">扔瓶子</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="dropdown">
+                      <a href="login.html">我的</a>
+                      <ul>
+                          <li>
+                              <a href="#">我的资料</a>
+                          </li>
+                          <li>
+                              <a href="#">我的协议</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="dropdown">
+                      <a href="#">联系我们</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div class="clearfix"></div>
+    <div class="tm-welcome-section">
+      <div class="container text-center tm-welcome-container">
+        <div class="tm-welcome">
+          <i class="fas tm-fa-big "><img src="img/woshou3.png"></i>
+          <h1 class="text-uppercase mb-3 tm-site-name">协易----协议</h1>
+          <p class="tm-site-description">Welcome To Protocol!</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="row tm-mt-big tm-about-row tm-mb-medium">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 tm-contact-col">
+          <div class="tm-contact-left tm-bg-pink-light-2 tm-text-white text-right p-md-5 p-4">
+            <i class="fas fa-3x fa-comments mb-4"></i>
+            <h2 class="tm-media-2-header">生成协议</h2>
+          </div>
+          <div class="tm-bg-gray tm-contact-middle">
+            <form action="#" method="post">
+              <div class="form-group mb-4">
+                <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="主题" required/>
+              </div>
+              <div class="form-group mb-4">
+                <input type="text" id="contact_email" name="contact_email" class="form-control" placeholder="签署协议人数" required/>
+              </div>
+              <div class="form-group mb-4">
+              </div>
+
+              <div class="form-group mb-4">
+                <textarea rows="8" style="width: 100%!important;" id="contact_message" name="contact_message" class="form-control" placeholder="协议内容..." required></textarea>
+              </div>
+              <div class="form-group mb-0">
+                <button type="submit" class="btn btn-secondary">签署</button><button type="submit" class="btn btn-secondary">协议链接</button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div> <!-- .container -->
+
+  </div> <!-- .main -->
+
+  <!-- load JS -->
+  <script src="headHide__function.js/jquery-3.2.1.slim.min.js"></script> <!-- https://jquery.com/ -->
+  <script src="headHide__function.js/bootstrap.min.js"></script>         <!-- https://getbootstrap.com/ -->
+  <script>
+
+    /* DOM is ready
+    ------------------------------------------------*/
+    $(function () {
+
+      if (renderPage) {
+        $('body').addClass('loaded');
+      }
+
+      $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright
+    });
+
+  </script>
+</body>
+</html>

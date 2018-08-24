@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200, user-scalable=yes, target-densitydpi=device-dpi">
+<title>协易个人中心</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="Public/DmsUser/b111/Public/img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="Public/DmsUser/b111/Public/css/font-awesome.css">
+<link rel="stylesheet" href="Public/DmsUser/b111/Public/css/header.css">
+<link rel="stylesheet" href="Public/DmsUser/b111/Public/css/index.css">
+<link rel="stylesheet" href="Public/DmsUser/b111/Public/css/indexa.css">
+<script src="Public/DmsUser/b111/Public/js/jquery-2.2.3.min.js"></script>
+<script src="Public/DmsUser/b111/Public/img/bg/js/tour.js"></script>
+<script>
+            $(function() {
+                var now = new Date(), hour = now.getHours(), igreet;
+                if (hour < 6) {
+                    igreet = ("晚上好")
+                } else if (hour < 12) {
+                    igreet = ("早上好")
+                } else if (hour < 18) {
+                    igreet = ("下午好")
+                } else {
+                    igreet = ("晚上好")
+                }
+                $('.js-igreet').html(igreet);
+                $('.js-logout').on('click', function() {
+                    $('.dialog').fadeIn();
+                });
+                $('.js-sure').on('click', function() {
+                    $('.dialog').fadeOut();
+                    location.href = '/index.php/DmsUser/Public/logout';
+                    setcookie('loginstatus','yes');
+                });
+                $('.js-cancel').on('click', function() {
+                    $('.dialog').fadeOut();
+                });
+            });
+        </script>
+<script type="text/javascript"> 
+	var queren = '确认';
+	var	quxiao = '取消';
+	$(document).ready(function(){
+	//判断当前方法是哪一个 对其进行显
+	var data = '{\"\\u8d44\\u6599\\u7ba1\\u7406\":[{\"model\":\"User\",\"action\":\"view\",\"title\":\"\\u8d44\\u6599\\u67e5\\u770b\",\"level\":1,\"secPwd\":\"false\",\"pin\":\"\"},{\"model\":\"User\",\"action\":\"edit\",\"title\":\"\\u8d44\\u6599\\u4fee\\u6539\",\"level\":1,\"secPwd\":\"false\",\"pin\":\"\"},{\"model\":\"User\",\"action\":\"setPass\",\"title\":\"\\u5bc6\\u7801\\u4fee\\u6539\",\"level\":1,\"secPwd\":\"false\",\"pin\":\"\"}],\"\\u4e1a\\u52a1\\u7ba1\\u7406\":[{\"model\":\"Sale\",\"action\":\"reg:sale_reg[1]\",\"title\":\"\\u4f1a\\u5458\\u6ce8\\u518c\",\"level\":1,\"pin\":\"\"},{\"model\":\"User\",\"action\":\"getSpreadCode\",\"title\":\"\\u63a8\\u5e7f\\u94fe\\u63a5\",\"level\":1,\"pin\":\"\"},{\"model\":\"Sale\",\"action\":\"buy:sale_buy[1]\",\"title\":\"\\u590d\\u6295\",\"level\":1,\"pin\":\"\"},{\"model\":\"Sale\",\"action\":\"buy:sale_buy[2]\",\"title\":\"\\u6d88\\u8d39\\u8d2d\\u7269\",\"level\":1,\"pin\":\"\"},{\"model\":\"Sale\",\"action\":\"buy:sale_buy[4]\",\"title\":\"\\u540c\\u5151\\u79ef\\u5206\\u5151\\u6362\",\"level\":1,\"pin\":\"\"},{\"model\":\"Sale\",\"action\":\"tj_acclist\",\"title\":\"\\u63a8\\u5e7f\\u94fe\\u63a5\\u5ba1\\u6838\",\"level\":1,\"pin\":\"\"},{\"model\":\"Sale\",\"action\":\"acclist\",\"title\":\"\\u4f1a\\u5458\\u8ba2\\u5355\\u5ba1\\u6838\",\"level\":1,\"pin\":\"\"},{\"model\":\"User\",\"action\":\"myreg\",\"title\":\"\\u6211\\u7684\\u4f1a\\u5458\\u8ba2\\u5355\",\"level\":1,\"secPwd\":\"false\",\"pin\":\"\"},{\"model\":\"Sale\",\"action\":\"productmysale\",\"title\":\"\\u6211\\u7684\\u4ea7\\u54c1\\u8ba2\\u5355\",\"level\":1,\"secPwd\":\"false\",\"pin\":\"\"},{\"model\":\"Sale\",\"action\":\"mysale\",\"title\":\"\\u6211\\u7684\\u64cd\\u4f5c\\u8ba2\\u5355\",\"level\":1,\"secPwd\":\"false\",\"pin\":\"\"}],\"\\u8d22\\u52a1\\u7ba1\\u7406\":{\"0\":{\"model\":\"FunBank\",\"action\":\"rem\",\"title\":\"\\u6c47\\u6b3e\\u901a\\u77e5\",\"level\":1,\"pin\":\"\"},\"1\":{\"model\":\"Transfer\",\"action\":\"index\",\"title\":\"\\u8d27\\u5e01\\u8f6c\\u8d26\",\"level\":1,\"pin\":\"\"},\"3\":{\"model\":\"FunBank\",\"action\":\"index:fun_bank[1]\",\"title\":\"\\u7535\\u5b50\\u79ef\\u5206\\u660e\\u7ec6\",\"level\":1,\"pin\":\"\"},\"5\":{\"model\":\"FunBank\",\"action\":\"index:fun_bank[2]\",\"title\":\"\\u540c\\u5151\\u79ef\\u5206\\u660e\\u7ec6\",\"level\":1,\"pin\":\"\"},\"6\":{\"model\":\"FunBank\",\"action\":\"getM:fun_bank[2]\",\"title\":\"\\u540c\\u5151\\u79ef\\u5206\\u63d0\\u73b0\",\"level\":1,\"pin\":\"\"},\"7\":{\"model\":\"FunBank\",\"action\":\"index:fun_bank[3]\",\"title\":\"\\u590d\\u6295\\u79ef\\u5206\\u660e\\u7ec6\",\"level\":1,\"pin\":\"\"},\"9\":{\"model\":\"FunBank\",\"action\":\"index:fun_bank[4]\",\"title\":\"\\u6d88\\u8d39\\u79ef\\u5206\\u660e\\u7ec6\",\"level\":1,\"pin\":\"\"},\"11\":{\"model\":\"FunBank\",\"action\":\"index:fun_bank[5]\",\"title\":\"\\u7ea6\\u514b\\u672a\\u6765\\u660e\\u7ec6\",\"level\":1,\"pin\":\"\"},\"12\":{\"model\":\"FunBank\",\"action\":\"getM:fun_bank[5]\",\"title\":\"\\u7ea6\\u514b\\u672a\\u6765\\u63d0\\u73b0\",\"level\":1,\"pin\":\"\"}},\"\\u4fe1\\u606f\\u7ba1\\u7406\":[{\"model\":\"Mail\",\"action\":\"index\",\"title\":\"\\u90ae\\u4ef6\\u5217\\u8868\",\"level\":1,\"pin\":\"\"},{\"model\":\"Mail\",\"action\":\"send\",\"title\":\"\\u53d1\\u9001\\u90ae\\u4ef6\",\"level\":1,\"pin\":\"\"},{\"model\":\"Mail\",\"action\":\"sendbox\",\"title\":\"\\u53d1\\u4ef6\\u7bb1\",\"level\":1,\"pin\":\"\"},{\"model\":\"User\",\"action\":\"viewNotice\",\"title\":\"\\u516c\\u544a\\u7ba1\\u7406\",\"level\":1,\"secPwd\":\"false\",\"pin\":\"\"}]}';
+	var action = 'view';
+	var model = 'User';
+	var title='';
+	data_arr = {};
+	 data_arr = eval('('+data+')');
+       for(var key in data_arr){
+	//key 为资料管理 data_arr[key] 为一维数组 key 为一级菜单的标题
+           for(var key1 in data_arr[key]){
+	//key1 为一维数组的元素 data_arr[key][key1]['model']为模型 data_arr[key][key1]['Action']为方法 data_arr[key][key1]['title']为二级菜单标题  
+             if(data_arr[key][key1]['model']==model && data_arr[key][key1]['action']==action){
+               //判断一下Action是否相等
+               if(data_arr[key][key1]['action']==action){
+					 $("#"+data_arr[key][key1]['title']).css("background","#2B5F97");
+                     	title = data_arr[key][key1]['title'];
+               }
+             }
+           }
+       }
+       $('.core_title_con').before('<span class="core_left"><i class="icon-folder-close-alt core_i"></i></span>');
+    });
+</script>
+<meta name="__hash__" content="4c2a5d65d192d4ba48e7d174c18af77f_063e6889d6326deaf418c8009534045d"/>
+</head>
+<body style="background: #2b2f79">
+<!--背景图-->
+<div id="pano" style="width:100%;height:100%;">
+	<noscript>
+	<table style="width:100%;height:100%;">
+	<tr style="vertical-align:middle;">
+		<td>
+			<div style="text-align:center;">
+				ERROR:
+				<br/><br/>Javascript not activated<br/><br/>
+			</div>
+		</td>
+	</tr>
+	</table>
+	</noscript>
+</div>
+<div class="dialog" id="diaout" style=" width:360px; margin-left:-120px;">
+	<h3> 提示 <a class="close js-cancel" href="#"></a></h3>
+	<form class="af-form">
+		<p>
+			 您确认退出当前系统？
+		</p>
+		<br>
+		<br>
+		<input type="button" class="js-sure" value="确定" style="width:100px; ">
+		<input type="button" class="js-cancel" value=" 取消 " style="width:100px; margin-left:48px;">
+		<input type="hidden" name="__hash__" value="4c2a5d65d192d4ba48e7d174c18af77f_063e6889d6326deaf418c8009534045d"/>
+	</form>
+</div>
+<div class="content">
+	<div class="header">
+		<div class="topinfo">
+			<div class="top_box">
+				<div class="info">
+					<ul class="info-left">
+						<li>
+						<i class="fa fa-user-circle-o "></i><span> qjq786</span> ,
+						<span class="js-igreet">早上好</span>
+						</li>
+
+					</ul>
+					<ul class="info-right">
+						<li>
+						<a href="#"><i class="fa fa-bullhorn"></i></a>
+						</li>
+						<li>
+						<a href="#"><i class="fa fa-pencil"></i></a>
+						</li>
+						<li>
+						<a href="#" class="js-logout"><i class="fa fa-power-off"></i></a>
+						</li>
+					</ul>
+					<ul class="message_top" id="msgrid">
+					</ul>
+					<div class="clr">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top_box mtop12">
+			<div class="nlogo">
+
+			</div>
+			<div class="nav">
+				<h3 class="none">导航栏</h3>
+				<ul id="menu">
+					<li>
+					<a href="个人面板.html">个人面板</a>
+					</li>
+					<li class="dropdown">
+					<a href="查看资料.html"> 资料管理 <i class="caret"></i></a>
+					<div class="dropdown-content">
+						<ul class="dronav" style="margin:0;">
+							<li>
+							<a href="查看资料.html">资料查看 </a>
+							</li>
+							</if>
+							<li>
+							<a href="修改资料.html">资料修改 </a>
+							</li>
+							</if>
+							<li>
+							<a href="修改密码.html">密码修改 </a>
+							</li>
+							</if>
+						</ul>
+
+						<div class="clr">
+						</div>
+					</div>
+					</li>
+
+					<li class="dropdown">
+					<a href="协议管理.html"> 信息管理 <i class="caret"></i></a>
+					<div class="dropdown-content">
+						<ul class="dronav" style="margin:0;">
+							<li>
+							<a href="协议管理.html">协议管理 </a>
+							</li>
+							</if>
+						</ul>
+
+						<div class="clr">
+						</div>
+					</div>
+					</li>
+				</ul>
+			</div>
+			<div class="clr">
+			</div>
+		</div>
+	</div>
+	<div class="about-main">
+		<link rel="stylesheet" href="Public/DmsUser/b111/Public/css/view.css">
+		<div class="core_main User" id="view">
+			<div class="core_title">
+				<span class="core_title_con"><span>当前位置</span>：资料管理>>资料查看</span>
+			</div>
+			<div class="core_con">
+				<table class="tablebg">
+				<tr>
+					<td class="tbkey">
+						用户编号：
+					</td>
+					<td class="tbval">
+						asdq712386&nbsp;
+					</td>
+				</tr>
+				<tr>
+					<td class="tbkey">
+						姓名：
+					</td>
+					<td class="tbval">
+						张军&nbsp;
+					</td>
+				</tr>
+				<tr>
+					<td class="tbkey">
+						会员级别：
+					</td>
+					<td class="tbval">
+						店铺&nbsp;
+					</td>
+				</tr>
+				<!--        -->
+				<tr>
+					<td class="tbkey">
+						Email：
+					</td>
+					<td class="tbval">
+						111
+					</td>
+				</tr>
+				<tr>
+					<td class="tbkey">
+						移动电话：
+					</td>
+					<td class="tbval">
+						13xxxxxxx
+					</td>
+				</tr>
+				<tr>
+					<td class="tbkey">
+						详细地址：
+					</td>
+					<td class="tbval">
+						11
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<button class="button_text button-150" type="button" onclick="history.back();">返回</button>
+					</td>
+					</table>
+				</div>
+			</div>
+			<div class="main-footer">
+				<div class="fleft">
+                        Company：HFT Digital Coins Limited (Smart trading digital currency )
+				</div>
+				<div class="fright">
+                        About us： 
+					<a class="btn btn-default btn-sm" href="#" target="_blank"><i class="fa fa-facebook-f fa-inverse"></i></a>
+					<a class="btn btn-default btn-sm" href="#" target="_blank"><i class="fa fa-twitter fa-inverse"></i></a>
+					<a class="btn btn-default btn-sm" href="#" target="_blank"><i class="fa fa-youtube-play fa-inverse"></i></a>
+					<a class="btn btn-default btn-sm" href="#" target="_blank"><i class="fa fa-google-plus fa-inverse"></i></a>
+				</div>
+				<div style="clear:both">
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+	</html>
