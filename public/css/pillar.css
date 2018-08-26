@@ -136,7 +136,7 @@ li {
 }
 .firstinfo{
     width: 100%;
-    height: 450px;
+    height: 500px;
     background-color: #e2ebf5;
     overflow: hidden;
 }
@@ -184,12 +184,13 @@ li {
 }
 .secondinfo{
     width: 100%;
-    height: 450px;
+    height: 500px;
     background: url("../images/082210.jpg");
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
 }
+
 .second-main{
     width: 1200px;
     margin: 0 auto;
@@ -207,15 +208,17 @@ li {
     border-top: 2px #ffffff solid;
     border-bottom: 2px #ffffff solid;
 }
-
 .second-main .second-info{
     margin: 30px;
     font-size: 20px;
     color: #ffffff;
 }
+.second-info:hover{
+    color:#e9b741
+}
 .thirdinfo{
     width: 100%;
-    height: 450px;
+    height: 500px;
     background: linear-gradient(to bottom right, #e2ebf5 , #e2ebf5);
     overflow: hidden;
 }

@@ -20,7 +20,7 @@ html,body{
 }
 .main-title{
 	height: 60px;
-	background: #1b6d85;
+	background: #34bdfd;
 }
 .main-title>span{
     display: block;
@@ -51,10 +51,10 @@ html,body{
 	background: #fff;
 }
 .nave ul li:nth-child(1).current{
-	background: #1b6d85;
+	background: #34bdfd;
 }
 .nave ul li:nth-child(2).current{
-	background: #1b6d85;
+	background: #34bdfd;
 }
 .current{
     color: #ffffff;
@@ -85,7 +85,7 @@ html,body{
     font-weight: 300;
     border-radius: 0;
     padding: 12px 20px;
-    border: 2px #1b6d85 solid;
+    border: 2px #34bdfd solid;
 }
 .form-controla:focus,.form-controlb:focus,.form-controlc:focus {
     border-color: white;
@@ -97,7 +97,7 @@ html,body{
     font-weight: 300;
     border-radius: 0;
     padding: 12px 20px;
-    border: 2px #1b6d85 solid;
+    border: 2px #34bdfd solid;
     margin-top: 20px;
 }
 
@@ -106,7 +106,7 @@ html,body{
     font-size: 15px;
     padding: 20px 50px 20px 50px;
     border-radius: 6px;
-    background: #1b6d85;
+    background: #34bdfd;
     color: #ffffff;
 }
 
