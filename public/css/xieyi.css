@@ -49,7 +49,7 @@ li {
 }
 .protocolinfo{
     width: 86%;
-    height: 400px;
+    height: 430px;
     margin: -50px 7% 0px 7%;
     border: 1px #B9B6E5 solid;
     border-radius: 8px;
@@ -68,7 +68,7 @@ li {
     border-left: 6px #a18cd1 solid;
     border-bottom: 1px #a18cd1 solid;
 }
-.thepeoples,.theman,.thetime,.blocknumber,.numberth{
+.xieyi_title,.thepeoples,.theman,.thetime,.blocknumber,.numberth{
     width: 280px;
     font-size: 18px;
     font-family: LiSu;
@@ -84,7 +84,7 @@ li {
 }
 .signprotocolinfo{
     width: 86%;
-    height: 180px;
+    height: 220px;
     margin: -50px 7% 0px 7%;
     border: 1px #B9B6E5 solid;
     border-radius: 8px;
@@ -107,7 +107,7 @@ li {
 }
 /**/
 .buchong{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .maininfotitle{
     font-size: 30px;
